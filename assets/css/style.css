@@ -13,24 +13,30 @@ header {
 header h1 {
     color: black;
     font-size: 30px;
-    width: 50%;
-}
-
-header p {
-    text-align: justify;
-    width: 60%;
-}
-
-header nav {
-    width: 40%;
+    width: 30%;
+    background-color: rgb(146, 146, 178);
+    opacity: 80%;
     text-align: right;
 }
 
-header nav ul {
+
+header nav {
+    width: 40%;
     float: right;
-    width: 30%;
+    text-align: right;
+}
+
+header nav{
+    float: right;
+    display: inline;
+    width: 60%;
     text-align: justify;
     word-spacing: 0.8em;
+}
+
+header nav ul {
+    padding-right: 25px;
+    float: right;
 }
 
 header nav ul li {
@@ -38,6 +44,15 @@ header nav ul li {
 }
 
 header nav li a {
-    text-decoration: none;
+    word-spacing: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
     color: black;
+}
+
+about 
+
+dv p {
+    text-align: justify;
+    width: 60%;
 }
