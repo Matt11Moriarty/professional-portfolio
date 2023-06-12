@@ -2,57 +2,131 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
-    background-color: beige;
-    position: fixed;
+/* HEADER NAME LOGO AND NAV BAR  */
+.header {
+    display: flex;
+    background-color: pink;
+    margin: 10px;
+    justify-content: space-between;
+    color: indianred;
     width: 100%;
-    font-size: 20px;
-    margin-right: 0;
 }
 
-header h1 {
-    color: black;
-    font-size: 30px;
-    width: 30%;
-    background-color: rgb(146, 146, 178);
-    opacity: 80%;
+.header-logo {
+    text-align: left;
+    padding-left: 0.25em;
+    margin: 10px
+}
+
+.header-nav {
     text-align: right;
+    flex-grow: 2;
+    margin: 10px;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
+.header-nav-item {
+    display: inline;
+    line-height: 0.2em;
+}
 
-header nav {
-    width: 40%;
-    float: right;
+.header-nav-item-anchor {
+    color: indianred;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: flex-end;
+    background-color: aquamarine;
+    height: 8em;
+}
+
+.subtitle-caption {
+    background-color: aliceblue;
+}
+
+/* Grid layout for the work */
+
+.work {
+    display: grid;
+    grid-template-areas: 
+    'title content1 content1 content1 content1'
+    'title content2 content2 content3 content3'
+    'title content4 content4 content5 content5';
+    background-color: beige;
+}
+
+/* Work title on the left */
+.title {
+    grid-area: title;
+    background-color: orange;
+    margin: 10px;
+}
+
+.title h1 {
     text-align: right;
+    margin-right: 1em;
+    font-size: xx-large;
 }
 
-header nav{
-    float: right;
-    display: inline;
-    width: 60%;
-    text-align: justify;
-    word-spacing: 0.8em;
+/* surf report content  */
+.content1 {
+    grid-area: content1;
+    margin: 10px;
+    background-color: pink;
 }
 
-header nav ul {
-    padding-right: 25px;
-    float: right;
+.content1 h2 {
+    margin-left: 1em;
+    text-align: left;
 }
 
-header nav ul li {
-    display: inline;
+/* LED wall content  */
+.content2 {
+    grid-area: content2;
+    margin: 10px;
+    background-color: blueviolet;
 }
 
-header nav li a {
-    word-spacing: normal;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    color: black;
+.content2 h2 {
+    margin-left: 1em;
+    text-align: left;
 }
 
-about 
-
-dv p {
-    text-align: justify;
-    width: 60%;
+/* calculator content  */
+.content3 {
+    grid-area: content3;
+    margin: 10px;
+    background-color: aquamarine;
 }
+
+.content3 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* pastel puzzels content  */
+.content4 {
+    grid-area: content4;
+    margin: 10px;
+    background-color: rgb(53, 65, 61);
+}
+
+.content4 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+/* run buddy content  */
+.content5 {
+    grid-area: content5;
+    margin: 10px;
+    background-color: rgb(127, 168, 255);
+}
+
+.content5 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* Contact me section
