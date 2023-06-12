@@ -2,20 +2,33 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.nav {
-    display: grid;
-    grid-template-columns: auto auto;
+.header {
+    display: flex;
     background-color: pink;
     color: indianred;
+    width: 100%;
 }
 
-.nav-logo {
+.header-logo {
     text-align: left;
+    order: 1;
     padding-left: 0.25em;
     
 }
 
-.nav-list {
+.header-nav {
     text-align: right;
+    order: 2;
+    flex-grow: 2;
     padding-right: 0.25em;
+    justify-content: flex-end;
+}
+
+.header-nav-item {
+    display: inline;
+    line-height: 0.2em;
+}
+
+.header-nav-item-anchor {
+    color: indianred;
 }
