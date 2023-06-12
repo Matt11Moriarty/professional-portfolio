@@ -65,6 +65,7 @@
     grid-area: title;
     background-color: orange;
     margin: 10px;
+    border-right: 3px solid;
 }
 
 .title1 h1 {
@@ -137,6 +138,7 @@
     grid-area: contact;
     background-color: red;
     margin: 10px;
+    border-right: 3px solid;
 }
 .title2 h1 {
     text-align: right;
@@ -146,7 +148,7 @@
 .content6 {
     grid-area: content6;
 }
-
+/* used flex here to get the ul to spread out */
 .content6 ul {
     display: flex;
     align-items: stretch;
