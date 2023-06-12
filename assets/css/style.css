@@ -50,21 +50,24 @@
 
 .work {
     display: grid;
+    width: 100%;
+    grid-template-columns: 20%;
     grid-template-areas: 
     'title content1 content1 content1 content1'
     'title content2 content2 content3 content3'
-    'title content4 content4 content5 content5';
+    'title content4 content4 content5 content5'
+    'contact content6 content6 content6 content6';
     background-color: beige;
 }
 
 /* Work title on the left */
-.title {
+.title1 {
     grid-area: title;
     background-color: orange;
     margin: 10px;
 }
 
-.title h1 {
+.title1 h1 {
     text-align: right;
     margin-right: 1em;
     font-size: xx-large;
@@ -129,4 +132,17 @@
     text-align: left;
 }
 
-/* Contact me section
+/* Contact me section*/
+.title2 {
+    grid-area: contact;
+    background-color: red;
+    margin: 10px;
+}
+
+.content6 {
+    grid-area: content6;
+}
+
+.content6 ul li {
+    display: inline;
+}
