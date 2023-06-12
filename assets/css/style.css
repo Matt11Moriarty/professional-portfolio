@@ -6,7 +6,7 @@
 .header {
     display: flex;
     background-color: pink;
-    padding: 10px;
+    margin: 10px;
     justify-content: space-between;
     color: indianred;
     width: 100%;
@@ -16,15 +16,16 @@
     text-align: left;
     order: 1;
     padding-left: 0.25em;
-    
+    margin: 10px
 }
 
 .header-nav {
     text-align: right;
     order: 2;
     flex-grow: 2;
-    padding-right: 0.25em;
+    margin: 10px;
     justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .header-nav-item {
@@ -58,15 +59,74 @@
     background-color: beige;
 }
 
+/* Work title on the left */
 .title {
     grid-area: title;
     background-color: orange;
-    text-align: right;
-    padding-right: 10px;
+    margin: 10px;
 }
 
+.title h1 {
+    text-align: right;
+    margin-right: 1em;
+    font-size: xx-large;
+}
+
+/* surf report content  */
 .content1 {
     grid-area: content1;
+    margin: 10px;
     background-color: pink;
 }
 
+.content1 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* LED wall content  */
+.content2 {
+    grid-area: content2;
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+.content2 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* calculator content  */
+.content3 {
+    grid-area: content3;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+.content3 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* pastel puzzels content  */
+.content4 {
+    grid-area: content4;
+    margin: 10px;
+    background-color: rgb(53, 65, 61);
+}
+
+.content4 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
+/* run buddy content  */
+.content5 {
+    grid-area: content5;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+.content5 h2 {
+    margin-left: 1em;
+    text-align: left;
+}
