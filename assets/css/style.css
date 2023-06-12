@@ -2,19 +2,22 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
+nav {
     background-color: beige;
-    padding-top: 0;
-    padding-bottom: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
 }
 
-header h1 {
+nav h1 {
     color: black;
     font-size: 20px;
     width: 50%;
 }
 
-header div {
+nav li {
+    display: inline-block;
     float: right;
     padding-top: 0;
     margin-top: 0;
