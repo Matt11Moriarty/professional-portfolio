@@ -2,24 +2,42 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-nav {
+header {
     background-color: beige;
     position: fixed;
-    top: 0;
     width: 100%;
     font-size: 20px;
+    margin-right: 0;
 }
 
-nav h1 {
+header h1 {
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     width: 50%;
 }
 
-nav li {
-    display: inline-block;
+header p {
+    text-align: justify;
+    width: 60%;
+}
+
+header nav {
+    width: 40%;
+    text-align: right;
+}
+
+header nav ul {
     float: right;
-    padding-top: 0;
-    margin-top: 0;
-    margin-right: 20px;
+    width: 30%;
+    text-align: justify;
+    word-spacing: 0.8em;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: black;
 }
