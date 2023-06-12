@@ -138,11 +138,27 @@
     background-color: red;
     margin: 10px;
 }
+.title2 h1 {
+    text-align: right;
+    margin: 10px;
+}
 
 .content6 {
     grid-area: content6;
 }
 
+.content6 ul {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 .content6 ul li {
     display: inline;
+}
+
+.content6 ul li a {
+    text-decoration: underline;
+    color: black;
 }
