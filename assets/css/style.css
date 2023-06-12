@@ -14,14 +14,12 @@
 
 .header-logo {
     text-align: left;
-    order: 1;
     padding-left: 0.25em;
     margin: 10px
 }
 
 .header-nav {
     text-align: right;
-    order: 2;
     flex-grow: 2;
     margin: 10px;
     justify-content: flex-end;
@@ -123,10 +121,12 @@
 .content5 {
     grid-area: content5;
     margin: 10px;
-    background-color: aquamarine;
+    background-color: rgb(127, 168, 255);
 }
 
 .content5 h2 {
     margin-left: 1em;
     text-align: left;
 }
+
+/* Contact me section
