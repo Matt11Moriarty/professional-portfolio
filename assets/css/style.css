@@ -2,9 +2,12 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* HEADER NAME LOGO AND NAV BAR  */
 .header {
     display: flex;
     background-color: pink;
+    padding: 10px;
+    justify-content: space-between;
     color: indianred;
     width: 100%;
 }
@@ -32,3 +35,38 @@
 .header-nav-item-anchor {
     color: indianred;
 }
+
+.subtitle {
+    display: flex;
+    justify-content: flex-end;
+    background-color: aquamarine;
+    height: 8em;
+}
+
+.subtitle-caption {
+    background-color: aliceblue;
+}
+
+/* Grid layout for the work */
+
+.work {
+    display: grid;
+    grid-template-areas: 
+    'title content1 content1 content1 content1'
+    'title content2 content2 content3 content3'
+    'title content4 content4 content5 content5';
+    background-color: beige;
+}
+
+.title {
+    grid-area: title;
+    background-color: orange;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.content1 {
+    grid-area: content1;
+    background-color: pink;
+}
+
