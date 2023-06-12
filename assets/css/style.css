@@ -2,57 +2,20 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
-    background-color: beige;
-    position: fixed;
-    width: 100%;
-    font-size: 20px;
-    margin-right: 0;
+.nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: pink;
+    color: indianred;
 }
 
-header h1 {
-    color: black;
-    font-size: 30px;
-    width: 30%;
-    background-color: rgb(146, 146, 178);
-    opacity: 80%;
+.nav-logo {
+    text-align: left;
+    padding-left: 0.25em;
+    
+}
+
+.nav-list {
     text-align: right;
-}
-
-
-header nav {
-    width: 40%;
-    float: right;
-    text-align: right;
-}
-
-header nav{
-    float: right;
-    display: inline;
-    width: 60%;
-    text-align: justify;
-    word-spacing: 0.8em;
-}
-
-header nav ul {
-    padding-right: 25px;
-    float: right;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav li a {
-    word-spacing: normal;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    color: black;
-}
-
-about 
-
-dv p {
-    text-align: justify;
-    width: 60%;
+    padding-right: 0.25em;
 }
