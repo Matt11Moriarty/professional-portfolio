@@ -73,17 +73,11 @@ main {
     background-color: rgba(240, 248, 255, 0.685);
     width: 100%;
     justify-content: flex-end;
-    border-color: black;
-    border: 0.1em solid;
 }
 
 .narrow-content {
     background-color: azure;
-    border-color: black;
-    border: 0.1em solid;
-    margin: -0.1em;
     width: 50%;
-    background-color: rgba(201, 166, 233, 0.883);
 }
 /* Contact me section*/
 
