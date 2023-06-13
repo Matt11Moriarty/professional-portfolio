@@ -78,7 +78,7 @@
 .content1 {
     grid-area: content1;
     margin: 10px;
-    background-color: pink;
+    background-image: url("./assets/images/surfing-a-wave-clipart.png");
 }
 
 .content1 h2 {
