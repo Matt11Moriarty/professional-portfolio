@@ -1,9 +1,6 @@
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body {
-    width: 100%;
-}
 
 /* HEADER NAME LOGO AND NAV BAR  */
 .header {
@@ -45,12 +42,17 @@ body {
     height: 8em;
 }
 
-.subtitle-caption {
+.subtitle h1 {
     background-color: aliceblue;
+    order: 2
+}
+
+.subtitle p {
+    order: 1;
 }
 
 /* work section */
-main {
+.block {
     display: flex;
     background-color: beige;
 }
@@ -81,9 +83,10 @@ main {
 }
 /* Contact me section*/
 
-footer {
+/* footer {
     display: flex;
-}
+    width: 100%
+} */
 
 .title h1 {
     text-align: right;
