@@ -46,121 +46,15 @@
     background-color: aliceblue;
 }
 
-/* Grid layout for the work */
-
-.work {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 20%;
-    grid-template-areas: 
-    'title content1 content1 content1 content1'
-    'title content2 content2 content3 content3'
-    'title content4 content4 content5 content5'
-    'contact content6 content6 content6 content6';
-    background-color: beige;
+/* work section */
+main {
+    display: flex;
 }
 
-/* Work title on the left */
-.title1 {
-    grid-area: title;
+.title {
     background-color: orange;
-    margin: 10px;
-    border-right: 3px solid;
 }
 
-.title1 h1 {
-    text-align: right;
-    margin-right: 1em;
-    font-size: xx-large;
-}
-
-/* surf report content  */
-.content1 {
-    grid-area: content1;
-    margin: 10px;
-    background-image: url("./assets/images/surfing-a-wave-clipart.png");
-}
-
-.content1 h2 {
-    margin-left: 1em;
-    text-align: left;
-}
-
-/* LED wall content  */
-.content2 {
-    grid-area: content2;
-    margin: 10px;
-    background-color: blueviolet;
-}
-
-.content2 h2 {
-    margin-left: 1em;
-    text-align: left;
-}
-
-/* calculator content  */
-.content3 {
-    grid-area: content3;
-    margin: 10px;
-    background-color: aquamarine;
-}
-
-.content3 h2 {
-    margin-left: 1em;
-    text-align: left;
-}
-
-/* pastel puzzels content  */
-.content4 {
-    grid-area: content4;
-    margin: 10px;
-    background-color: rgb(53, 65, 61);
-}
-
-.content4 h2 {
-    margin-left: 1em;
-    text-align: left;
-}
-/* run buddy content  */
-.content5 {
-    grid-area: content5;
-    margin: 10px;
-    background-color: rgb(127, 168, 255);
-}
-
-.content5 h2 {
-    margin-left: 1em;
-    text-align: left;
-}
 
 /* Contact me section*/
-.title2 {
-    grid-area: contact;
-    background-color: red;
-    margin: 10px;
-    border-right: 3px solid;
-}
-.title2 h1 {
-    text-align: right;
-    margin: 10px;
-}
 
-.content6 {
-    grid-area: content6;
-}
-/* used flex here to get the ul to spread out */
-.content6 ul {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.content6 ul li {
-    display: inline;
-}
-
-.content6 ul li a {
-    text-decoration: underline;
-    color: black;
-}
