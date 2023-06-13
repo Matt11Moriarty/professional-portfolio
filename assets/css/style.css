@@ -47,10 +47,6 @@
     order: 2
 }
 
-.subtitle p {
-    order: 1;
-}
-
 /* work section */
 .block {
     display: flex;
@@ -63,6 +59,11 @@
     margin: 1em;
     border-right: 0.2em solid;
     background-color: darksalmon;
+    font-size: large;
+}
+.title h2 {
+    text-align: right;
+    margin-right: 0.2em;
 }
 
 .content {
@@ -83,14 +84,12 @@
 }
 /* Contact me section*/
 
-.title h1 {
-    text-align: right;
-}
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 99%;
+    width: 100%;
     background-color: rgb(26, 223, 241);
 }
