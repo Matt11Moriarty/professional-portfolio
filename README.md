@@ -10,3 +10,12 @@ Resources
 
 - Bootstrap
   - https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+- chatgpt
+  - wrote my "about me" paragraph
+
+- media 
+  - https://stackoverflow.com/questions/17904018/show-hide-div-based-on-browser-size-using-only-css
+
+- fun css stuff
+  - https://freefrontend.com/css-text-effects/

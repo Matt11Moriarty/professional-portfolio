@@ -1,104 +1,266 @@
 * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Gambetta', serif;
 }
+
 body {
     width: 100%;
 }
-
 /* HEADER NAME LOGO AND NAV BAR  */
 .header {
     display: flex;
-    background-color: pink;
     justify-content: space-between;
-    color: indianred;
+    color: rgb(11, 11, 11);
     width: 100%;
+    background-color: rgb(185, 83, 83);
 }
 
 .header-logo {
     text-align: left;
     padding-left: 0.25em;
-    margin: 10px
+    margin: 10px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo h1 {
+    background: none;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
 }
 
 .header-nav {
-    text-align: right;
+    display: flex;
     flex-grow: 2;
     margin: 10px;
-    justify-content: flex-end;
     align-self: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end
 }
 
 .header-nav-item {
     display: inline;
+    justify-content: flex-end;
     line-height: 0.2em;
+    margin: 1em;
 }
 
 .header-nav-item-anchor {
-    color: indianred;
+    color: rgb(0, 0, 0);
+    background-color: PaleGoldenRod;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: .5em;
 }
 
 /* banner section  */
 .subtitle {
     display: flex;
     justify-content: flex-end;
-    background-color: aquamarine;
-    height: 8em;
+    background-color: rgb(173, 165, 62);
 }
 
-.subtitle-caption {
-    background-color: aliceblue;
+.subtitle h1 {
+    background-color:  rgb(185, 83, 83);
+    order: 2;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    font-family: 'Gambetta', serif;
+    color: PaleGoldenRod;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
 }
 
 /* work section */
-main {
+.block {
     display: flex;
     background-color: beige;
+    flex-grow: auto;
+    padding: 1em;
 }
 
 .title {
-    width: 15%;
+    width: 15vw;
     text-align: right;
     margin: 1em;
     border-right: 0.2em solid;
-    background-color: darksalmon;
+    background: none;
+    font-size:x-large;
+}
+.title h2 {
+    text-align: right;
+    background: none;
+    margin-right: 0.2em;
+    font-family: 'Gambetta', serif;
+    
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background: burlywood;
 }
 
 .wide-content {
-    background-color: rgba(240, 248, 255, 0.685);
     width: 100%;
-    justify-content: flex-end;
-    border-color: black;
-    border: 0.1em solid;
+    background-image: url('../images/surfing-a-wave-clipart.png');
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: calc(50vh - 150px);
+    border: 0.2em solid;
 }
 
 .narrow-content {
     background-color: azure;
-    border-color: black;
-    border: 0.1em solid;
-    margin: -0.1em;
     width: 50%;
-    background-color: rgba(201, 166, 233, 0.883);
+    min-height: calc(25vh - 150px);
+    display: flex;
+}
+
+
+.block p {
+    margin: 1em;
+    width: calc(100% - 16vw);
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background: none;
+    border: 0.25px solid; 
+    padding: 1em;
+    box-shadow: 3px 4px #9c9c7c;
+}
+
+.card-title {
+    justify-content: center;
+    background-color: rgb(250, 246, 191);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5em;
+    background-color: PaleGoldenRod;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.card-title h2 {
+    font-size: 1em;
+    background: none;
+    font-family: 'Gambetta', serif;
+}
+.card-title a {
+    font-size: 0.75em;
+    background: none;
 }
 /* Contact me section*/
 
-footer {
-    display: flex;
-}
-
-.title h1 {
-    text-align: right;
-}
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 99%;
-    background-color: rgb(26, 223, 241);
+    width: 100%;
+    background: none;
 }
+.contact-info a {
+    background: none;
+    text-decoration:underline;
+    color: black;
+}
+
+/* media screen settings  */
+/* .pc {
+    color: black;
+} */
+
+.tablet {
+    color: black;
+    display: hidden;
+}
+
+.phone {
+    color: black;
+    display: hidden;
+}
+
+/* css messin  */
+.header-logo h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+  
+
+/* Shows different Paragraphs depending on screen size  */
+
+@media screen and (max-width: 100000px) {
+    .block .pc {
+        display:inline;
+    }
+    .block .tablet {
+        display:none;
+    }
+    .block .phone {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .block .pc{
+        display:none;
+    }
+    .block .tablet {
+        display:block;
+    }
+    .block .phone {
+        display:none;
+    }
+    .wide-content {
+        min-height: calc(25vh - 150px);
+    }
+    .title {
+        font-size: small;
+    }
+    .header-logo h1, .subtitle h1 {
+        font-size: x-large;
+    }
+    
+}
+
+@media screen and (max-width: 391px) {
+    .block .pc {
+        display:none;
+    }
+    .block .tablet {
+        display:none;
+    }
+    .block .phone {
+        display:block;
+    }
+    .title {
+        font-size: small;
+    }
+    #contact-me h2 {
+        display: none;
+    }
+    .header-logo h1, .subtitle h1 {
+        font-size: large;
+    }
+    
+}
+
