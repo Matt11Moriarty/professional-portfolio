@@ -1,6 +1,9 @@
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: beige;
+}
+
+body {
+    width: 100%;
 }
 /* HEADER NAME LOGO AND NAV BAR  */
 .header {
@@ -8,6 +11,7 @@
     justify-content: space-between;
     color: rgb(11, 11, 11);
     width: 100%;
+    background-color: rgb(185, 83, 83);
 }
 
 .header-logo {
@@ -15,10 +19,23 @@
     padding-left: 0.25em;
     margin: 10px;
     background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .header-logo h1 {
     background: none;
     font-size: xxx-large;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
 }
 
 .header-nav {
@@ -35,19 +52,25 @@
 }
 
 .header-nav-item-anchor {
-    color: indianred;
+    color: rgb(0, 0, 0);
 }
 
 /* banner section  */
 .subtitle {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(68, 159, 129);
+    background-color: rgb(173, 165, 62);
 }
 
 .subtitle h1 {
-    background-color: aliceblue;
-    order: 2
+    background-color:  rgb(185, 83, 83);
+    order: 2;
+    padding-right: 1em;
+    padding-left: 0.5em;
+    font-family: 'Gambetta', serif;
+    color: PaleGoldenRod;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
 }
 
 /* work section */
@@ -70,6 +93,8 @@
     text-align: right;
     background: none;
     margin-right: 0.2em;
+    font-family: 'Gambetta', serif;
+    
 }
 
 .content {
@@ -113,7 +138,7 @@
 
 .card-title {
     justify-content: center;
-    background-color: rgb(33, 131, 98);
+    background-color: rgb(250, 246, 191);
     margin-bottom: 1em;
     margin-top: 1em;
     display: flex;
@@ -121,10 +146,14 @@
     justify-content: center;
     align-items: flex-start;
     padding: 0.5em;
+    background-color: PaleGoldenRod;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 .card-title h2 {
     font-size: 1em;
     background: none;
+    font-family: 'Gambetta', serif;
 }
 .card-title a {
     font-size: 0.75em;
@@ -161,6 +190,13 @@
     color: black;
     display: hidden;
 }
+
+/* css messin  */
+.header-logo h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+  
 
 /* Shows different Paragraphs depending on screen size  */
 
