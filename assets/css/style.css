@@ -142,3 +142,53 @@
     background: none;
     text-decoration:underline;
 }
+
+/* media screen settings  */
+.x700 {
+    color: black;
+    display: hidden;
+}
+
+.x490 {
+    color: black;
+    display: hidden;
+}
+
+/* iPhone  */
+
+@media screen and (max-width: 959px) {
+    .block .x700 {
+        display:inline;
+    }
+    .block .x490 {
+        display:none;
+    }
+    .block .x290 {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .block .x700{
+        display:none;
+    }
+    .block .x490 {
+        display:block;
+    }
+    .block .x290 {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .block .x700 {
+        display:none;
+    }
+    .block .x490 {
+        display:none;
+    }
+    .block .x290 {
+        display:block;
+    }
+}
+
