@@ -39,7 +39,6 @@
     display: flex;
     justify-content: flex-end;
     background-color: aquamarine;
-    height: 8em;
 }
 
 .subtitle h1 {
@@ -75,12 +74,37 @@
 .wide-content {
     background-color: rgba(240, 248, 255, 0.685);
     width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 50%
+}
+
+.block p {
+    margin: 1em;
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .narrow-content {
     background-color: azure;
     width: 50%;
+    height: 25%;
+    display: flex;
+}
+
+.card-title {
+    justify-content: center;
+    background-color: aquamarine;
+    height: 3em;
+    margin-bottom: 1em;
+}
+.card-title h2 {
+    font-size: 1em;
 }
 /* Contact me section*/
 
