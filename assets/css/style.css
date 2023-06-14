@@ -80,8 +80,8 @@
 }
 
 .wide-content {
-    background: none;
     width: 100%;
+    background-image: url('../images/surfing-a-wave-clipart.png');
     justify-content: flex-start;
     display: flex;
     align-items: flex-end;
