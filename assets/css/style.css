@@ -39,20 +39,28 @@ body {
 }
 
 .header-nav {
-    text-align: right;
+    display: flex;
     flex-grow: 2;
     margin: 10px;
-    justify-content: flex-end;
     align-self: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end
 }
 
 .header-nav-item {
     display: inline;
+    justify-content: flex-end;
     line-height: 0.2em;
+    margin: 1em;
 }
 
 .header-nav-item-anchor {
     color: rgb(0, 0, 0);
+    background-color: PaleGoldenRod;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: .5em;
 }
 
 /* banner section  */
