@@ -62,7 +62,7 @@
     margin: 1em;
     border-right: 0.2em solid;
     background: none;
-    font-size: large;
+    font-size:x-large;
 }
 .title h2 {
     text-align: right;
@@ -84,16 +84,17 @@
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    min-height: calc(100vh - 150px);
+    min-height: calc(50vh - 150px);
     border: 0.2em solid;
 }
 
 .narrow-content {
     background-color: azure;
     width: 50%;
-    min-height: calc(25 - 150px);
+    min-height: calc(25vh - 150px);
     display: flex;
 }
+
 
 .block p {
     margin: 1em;
@@ -144,51 +145,67 @@
 }
 
 /* media screen settings  */
-.x700 {
+/* .pc {
+    color: black;
+} */
+
+.tablet {
     color: black;
     display: hidden;
 }
 
-.x490 {
+.phone {
     color: black;
     display: hidden;
 }
 
-/* iPhone  */
+/* Shows different Paragraphs depending on screen size  */
 
-@media screen and (max-width: 959px) {
-    .block .x700 {
+@media screen and (max-width: 100000px) {
+    .block .pc {
         display:inline;
     }
-    .block .x490 {
+    .block .tablet {
         display:none;
     }
-    .block .x290 {
-        display:none;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .block .x700{
-        display:none;
-    }
-    .block .x490 {
-        display:block;
-    }
-    .block .x290 {
+    .block .phone {
         display:none;
     }
 }
 
-@media screen and (max-width: 479px) {
-    .block .x700 {
+@media screen and (max-width: 912px) {
+    .block .pc{
         display:none;
     }
-    .block .x490 {
-        display:none;
-    }
-    .block .x290 {
+    .block .tablet {
         display:block;
+    }
+    .block .phone {
+        display:none;
+    }
+    .wide-content {
+        min-height: calc(25vh - 150px);
+    }
+    .title {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .block .pc {
+        display:none;
+    }
+    .block .tablet {
+        display:none;
+    }
+    .block .phone {
+        display:block;
+    }
+    .title {
+        font-size: small;
+    }
+    #contact-me h2 {
+        display: none;
     }
 }
 
