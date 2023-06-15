@@ -67,6 +67,7 @@ body {
 .subtitle {
     display: flex;
     justify-content: flex-end;
+    background-image: url(../images/gold_banner.jpg);
     background-color: rgb(173, 165, 62);
 }
 
@@ -132,6 +133,11 @@ body {
     outline: 1em solid;
     outline-color: beige;
 }
+/* .overlay {
+    background-color: black;
+    position: absolute;
+    z-index: 4;
+} */
 
 .wide-content::before {
     background-blend-mode: lighten;
