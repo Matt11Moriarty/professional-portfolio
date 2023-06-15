@@ -87,6 +87,7 @@ body {
     background-color: beige;
     flex-grow: auto;
     padding: 1em;
+    justify-content: flex-start;
 }
 
 .title {
@@ -96,6 +97,7 @@ body {
     border-right: 0.2em solid;
     background: none;
     font-size:x-large;
+    margin-right: 2em;
 }
 .title h2 {
     text-align: right;
@@ -131,8 +133,13 @@ body {
     outline-color: beige;
 }
 
+.wide-content::before {
+    background-blend-mode: lighten;
+}
+
 .narrow-content {
     background-color: azure;
+    background-size: cover;
     width: 49%;
     min-height: calc(25vh - 150px);
     display: flex;
@@ -143,6 +150,7 @@ body {
     outline-color: beige;
     background-size: cover;
     margin-top: .5em;
+    padding-right: 1em;
 }
 
 
@@ -164,10 +172,11 @@ body {
     margin-bottom: 1em;
     margin-top: 1em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0.5em;
+    padding: 0.25em;
     background-color: PaleGoldenRod;
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
