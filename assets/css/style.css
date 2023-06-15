@@ -9,7 +9,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    color: rgb(11, 11, 11);
     width: 100%;
     background-color: rgb(185, 83, 83);
 }
@@ -24,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .header-logo h1 {
     background: none;
     font-size: xxx-large;
@@ -37,7 +37,7 @@ body {
     outline: none;
     text-align: center;
 }
-
+/* nav bar with hrefs to page segments */
 .header-nav {
     display: flex;
     flex-grow: 2;
@@ -81,7 +81,7 @@ body {
     border-bottom-left-radius: 0.5em;
 }
 
-/* work section */
+/* Work section */
 .block {
     display: flex;
     background-color: beige;
@@ -114,13 +114,19 @@ body {
 
 .wide-content {
     width: 100%;
+    z-index: 1;
     background-image: url('../images/surfing-a-wave-clipart.png');
+    background-size: cover;
     justify-content: flex-start;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
     min-height: calc(50vh - 150px);
-    border: 0.2em solid;
+    box-sizing: border-box;
+    border: 0.4em solid;
+    border-color: PaleGoldenRod;
+    outline: 1em solid;
+    outline-color: beige;
 }
 
 .narrow-content {
@@ -128,6 +134,12 @@ body {
     width: 50%;
     min-height: calc(25vh - 150px);
     display: flex;
+    box-sizing: border-box;
+    border: 0.4em solid;
+    border-color: PaleGoldenRod;
+    outline: 1em solid;
+    outline-color: beige;
+    background-size: cover;
 }
 
 
@@ -146,7 +158,6 @@ body {
 
 .card-title {
     justify-content: center;
-    background-color: rgb(250, 246, 191);
     margin-bottom: 1em;
     margin-top: 1em;
     display: flex;
@@ -185,9 +196,7 @@ body {
 }
 
 /* media screen settings  */
-/* .pc {
-    color: black;
-} */
+
 
 .tablet {
     color: black;
@@ -199,7 +208,7 @@ body {
     display: hidden;
 }
 
-/* css messin  */
+/* css goofin  */
 .header-logo h1:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;

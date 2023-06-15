@@ -8,14 +8,15 @@ Resources
 - Grid layout
   - https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_layout_named
 
-- Bootstrap
-  - https://getbootstrap.com/docs/5.3/getting-started/introduction/
-
 - chatgpt
-  - wrote my "about me" paragraph
+  - wrote my "about me" paragraph's
 
 - media 
   - https://stackoverflow.com/questions/17904018/show-hide-div-based-on-browser-size-using-only-css
 
 - fun css stuff
   - https://freefrontend.com/css-text-effects/
+
+- box sizing
+  - https://css-tricks.com/box-sizing/
+  - https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-sizing_new
