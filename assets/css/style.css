@@ -4,6 +4,7 @@
 
 body {
     width: 100%;
+    box-sizing: border-box;
 }
 /* HEADER NAME LOGO AND NAV BAR  */
 .header {
@@ -117,7 +118,7 @@ body {
 }
 
 .wide-content {
-    flex: 1 0 100%;
+    flex: 1 0 90%;
     height: 45%;
     /* z-index: 1; */
     background-image: url('../images/surfing-a-wave-clipart.png');
@@ -128,7 +129,6 @@ body {
     flex-wrap: wrap;
     margin-bottom: 0.5em;
     min-height: calc(50vh - 150px);
-    box-sizing: border-box;
     border: 0.4em solid;
     border-color: PaleGoldenRod;
     outline: 1em solid;
@@ -164,7 +164,6 @@ body {
 
 .block p {
     margin: 1em;
-    width: calc(100% - 16vw);
     justify-content: flex-start;
     display: flex;
     align-items: flex-end;
@@ -180,7 +179,7 @@ body {
     margin-bottom: 2em;
     margin-top: 2em;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -190,6 +189,7 @@ body {
     border-bottom-right-radius: 0.5em;
 }
 .card-title h2 {
+    flex: 1 0 20%;
     font-size: 1em;
     background: none;
     font-family: 'Gambetta', serif;
