@@ -90,6 +90,7 @@ body {
     flex-grow: auto;
     padding: 1em;
     justify-content: flex-start;
+    height: calc(100vh - 100px);
 }
 
 .title {
@@ -114,12 +115,11 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    /* height: 100vh; */
 }
 
 .wide-content {
     flex: 1 0 90%;
-    height: 45%;
+    /* height: 55%; */
     /* z-index: 1; */
     background-image: url('../images/surfing-a-wave-clipart.png');
     background-size: cover;
@@ -128,7 +128,7 @@ body {
     align-items: flex-end;
     flex-wrap: wrap;
     margin-bottom: 0.5em;
-    min-height: calc(50vh - 150px);
+    /* min-height: calc(100vh - 150px); */
     border: 0.4em solid;
     border-color: PaleGoldenRod;
     outline: 1em solid;
@@ -175,39 +175,23 @@ body {
 }
 
 .card-title {
-    justify-content: center;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0.25em;
-    background-color: PaleGoldenRod;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+
 }
+
 .card-title h2 {
-    flex: 1 0 20%;
-    font-size: 1em;
-    background: none;
-    font-family: 'Gambetta', serif;
+
 }
+
 .card-title a {
-    font-size: 0.75em;
-    background: none;
+
 }
 /* Contact me section*/
 
+.content a {
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background: none;
+}
+.content .contact-info {
+
 }
 .contact-info a {
     background: none;
