@@ -9,13 +9,16 @@ body {
     box-sizing: border-box;
 }
 /* HEADER NAME LOGO AND NAV BAR  */
-.header {
+
+/* top section with name and hrefs  */
+header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: rgb(185, 83, 83);
 }
 
+/* name  */
 .header-logo {
     text-align: left;
     padding-left: 0.25em;
@@ -40,7 +43,7 @@ body {
     outline: none;
     text-align: center;
 }
-/* css goofin  */
+/* cool hover effect  */
 .header-logo h1:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
@@ -57,7 +60,7 @@ body {
     background-color: transparent;
 }
 
-.header-nav-item {
+.header-nav li {
     display: inline;
     justify-content: flex-end;
     line-height: 0.2em;
@@ -65,7 +68,7 @@ body {
     /* background-color: PaleGoldenRod */
 }
 
-.header-nav-item-anchor {
+.header-nav li a {
     color: rgb(0, 0, 0);
     /* background-color: PaleGoldenRod; */
     padding-left: 0.5em;
