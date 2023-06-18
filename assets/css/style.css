@@ -1,9 +1,11 @@
 * {
     font-family: 'Gambetta', serif;
+    background-color: beige;
 }
 
 body {
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 /* HEADER NAME LOGO AND NAV BAR  */
@@ -38,6 +40,11 @@ body {
     outline: none;
     text-align: center;
 }
+/* css goofin  */
+.header-logo h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
 /* nav bar with hrefs to page segments */
 .header-nav {
     display: flex;
@@ -47,6 +54,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
+    background-color: transparent;
 }
 
 .header-nav-item {
@@ -54,11 +62,12 @@ body {
     justify-content: flex-end;
     line-height: 0.2em;
     margin: 1em;
+    /* background-color: PaleGoldenRod */
 }
 
 .header-nav-item-anchor {
     color: rgb(0, 0, 0);
-    background-color: PaleGoldenRod;
+    /* background-color: PaleGoldenRod; */
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-radius: .5em;
@@ -69,7 +78,9 @@ body {
     display: flex;
     justify-content: flex-end;
     background-image: url(../images/gold_banner.jpg);
+    background-size: cover;
     background-color: rgb(173, 165, 62);
+    margin-bottom: 2em;
 }
 
 .subtitle h1 {
@@ -82,147 +93,115 @@ body {
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
 }
+/* new section  */
 
-/* Work section */
 .block {
     display: flex;
+    margin-bottom: 2%;
     background-color: beige;
-    flex-grow: auto;
-    padding: 1em;
-    justify-content: flex-start;
-    /* height: calc(100vh - 100px); */
 }
 
 .title {
     flex: 1 0 15%;
+    border-right: 3px solid black;
     text-align: right;
-    margin: 1em;
-    border-right: 0.2em solid;
-    background: none;
-    font-size:x-large;
-    margin-right: 2em;
+    padding-right: 2%;
+    margin-right: 2%;
+    position: 1;
 }
+
 .title h2 {
-    text-align: right;
-    background: none;
-    margin-right: 0.2em;
-    font-family: 'Gambetta', serif;
-    
+    flex: 1 0 80%;
+    font-size: 1.5em;
 }
 
 .content {
     display: flex;
+    flex: 1 0 80%;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+    align-items: stretch;
 }
-
 .wide-content {
-    flex: 1 0 90%;
-    /* height: 75%; */
-    /* z-index: 1; */
+    flex: 1 0 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     background-image: url('../images/surfing-a-wave-clipart.png');
     background-size: cover;
-    justify-content: flex-start;
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    margin-bottom: 0.5em;
-    /* min-height: calc(100vh - 150px); */
-    border: 0.4em solid;
-    border-color: PaleGoldenRod;
-    outline: 1em solid;
-    outline-color: beige;
+    opacity: 0.5;
+    min-height: calc(50vh - 150px);
+    background-color: rgb(227, 229, 110);
+    background-blend-mode:soft-light;
+    border: 10px solid;
+    border-color: beige;
+    border-radius: 1.5em;
 }
-/* .overlay {
-    background-color: black;
-    position: absolute;
-    z-index: 4;
-} */
-
-.wide-content::before {
-    background-blend-mode: lighten;
-}
-
 .narrow-content {
-    background-color: azure;
-    background-size: cover;
-    flex: 1 0 45%;
-    /* min-height: calc(25vh - 150px); */
-    height: 25%;
-    display: flex;
-    box-sizing: border-box;
-    border: 0.4em solid;
-    border-color: PaleGoldenRod;
-    outline: 1em solid;
-    outline-color: beige;
-    background-size: cover;
-    margin-top: .5em;
-    padding-right: 1em;
-}
-
-
-.block p {
-    margin: 1em;
-    justify-content: flex-start;
+    flex: 1 0 40%;
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
-    background: none;
-    border: 0.25px solid; 
-    padding: 1em;
-    box-shadow: 3px 4px #9c9c7c;
+    opacity: 0.5;
+    min-height: calc(25vh - 150px);
+    background-size: cover;
+    background-color: rgb(227, 229, 110);
+    background-blend-mode:soft-light;
+    border: 10px solid;
+    border-color: beige;
+    border-radius: 1.5em;
+}
+.narrow-content:hover {
+    opacity: 1;
+    background-blend-mode:normal;
+}
+.wide-content:hover {
+    opacity: 1;
+    background-blend-mode: normal;
 }
 
 .card-title {
-
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: calc(22vh - 100px);
+    background-blend-mode: normal;
+    width: 8em;
+    /* padding-bottom: 1em;
+    margin-top: 1em; */
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 1em;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* align-items: flex-end; */
 }
-
 .card-title h2 {
-
+    margin-bottom: 0.2em;
+    font-size: 1em;
+    background: none;
+    font-family: 'Gambetta', serif;
 }
-
 .card-title a {
-
+    margin-top: 0.2em;
+    font-size: 0.75em;
+    background: none;
 }
-/* Contact me section*/
-
 
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background: none;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    padding-top: 1em;
+    flex: 1 0 20%;
 }
+
 .contact-info a {
-    background: none;
-    text-decoration:underline;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
     color: black;
 }
-
-/* media screen settings  */
-
-
-.tablet {
-    color: black;
-    display: hidden;
-}
-
-.phone {
-    color: black;
-    display: hidden;
-}
-
-/* css goofin  */
-.header-logo h1:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 1px;
-  }
-  
-
-/* Shows different Paragraphs depending on screen size  */
 
 @media screen and (max-width: 100000px) {
     .block .pc {
@@ -241,21 +220,20 @@ body {
         display:none;
     }
     .block .tablet {
-        display:block;
+        display:none;
     }
     .block .phone {
-        display:none;
+        display:block;
     }
     .wide-content {
         min-height: calc(25vh - 150px);
     }
-    .title {
-        font-size: small;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: x-large;
     }
-    
+    .title h2 {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 391px) {
@@ -268,15 +246,16 @@ body {
     .block .phone {
         display:block;
     }
-    .title {
-        font-size: small;
-    }
-    #contact-me h2 {
-        display: none;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: large;
     }
-    
+    .wide-content {
+        flex: 1 0 95%;
+    }
+    .narrow-content{
+        flex: 1 0 95%;
+    }
+    /* footer .title {
+        display: none;
+    } */
 }
-
