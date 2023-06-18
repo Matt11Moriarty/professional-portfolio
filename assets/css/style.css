@@ -46,7 +46,7 @@ body {
     align-self: flex-end;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: flex-end
+    align-items: flex-end;
 }
 
 .header-nav-item {
@@ -90,7 +90,7 @@ body {
     flex-grow: auto;
     padding: 1em;
     justify-content: flex-start;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
 }
 
 .title {
@@ -119,7 +119,7 @@ body {
 
 .wide-content {
     flex: 1 0 90%;
-    /* height: 55%; */
+    /* height: 75%; */
     /* z-index: 1; */
     background-image: url('../images/surfing-a-wave-clipart.png');
     background-size: cover;
@@ -187,11 +187,14 @@ body {
 }
 /* Contact me section*/
 
-.content a {
 
-}
-.content .contact-info {
-
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: none;
 }
 .contact-info a {
     background: none;

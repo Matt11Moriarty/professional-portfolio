@@ -61,12 +61,12 @@ body {
     justify-content: flex-end;
     line-height: 0.2em;
     margin: 1em;
-    background-color: PaleGoldenRod
+    /* background-color: PaleGoldenRod */
 }
 
 .header-nav-item-anchor {
     color: rgb(0, 0, 0);
-    background-color: PaleGoldenRod;
+    /* background-color: PaleGoldenRod; */
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-radius: .5em;
@@ -77,6 +77,7 @@ body {
     display: flex;
     justify-content: flex-end;
     background-image: url(../images/gold_banner.jpg);
+    background-size: cover;
     background-color: rgb(173, 165, 62);
     margin-bottom: 2em;
 }
@@ -95,7 +96,7 @@ body {
 
 .block {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 2%;
     background-color: beige;
 }
@@ -106,6 +107,12 @@ body {
     text-align: right;
     padding-right: 2%;
     margin-right: 2%;
+    position: 1;
+}
+
+.title h2 {
+    flex: 1 0 80%;
+    font-size: 1.5em;
 }
 
 .content {
@@ -120,12 +127,14 @@ body {
     align-items: flex-end;
     justify-content: flex-start;
     background-image: url('../images/surfing-a-wave-clipart.png');
-    background-size: 100%;
+    background-size: cover;
     opacity: 0.5;
     min-height: calc(50vh - 150px);
     background-color: rgb(227, 229, 110);
     background-blend-mode:soft-light;
-    border: 2px solid;
+    border: 10px solid;
+    border-color: beige;
+    border-radius: 1.5em;
 }
 .narrow-content {
     flex: 1 0 40%;
@@ -133,9 +142,12 @@ body {
     align-items: flex-end;
     opacity: 0.5;
     min-height: calc(25vh - 150px);
-    background-size: 100%;
+    background-size: cover;
     background-color: rgb(227, 229, 110);
     background-blend-mode:soft-light;
+    border: 10px solid;
+    border-color: beige;
+    border-radius: 1.5em;
 }
 .narrow-content:hover {
     opacity: 1;
@@ -165,15 +177,30 @@ body {
     /* align-items: flex-end; */
 }
 .card-title h2 {
+    flex: 1 0 5%;
     font-size: 1em;
     background: none;
     font-family: 'Gambetta', serif;
 }
 .card-title a {
+    flex: 1 0 10%;
     font-size: 0.75em;
     background: none;
 }
 
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    padding-top: 1em;
+    flex: 1 0 20%;
+}
+
+.contact-info a {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
 
 @media screen and (max-width: 100000px) {
     .block .pc {
@@ -192,21 +219,20 @@ body {
         display:none;
     }
     .block .tablet {
-        display:block;
+        display:none;
     }
     .block .phone {
-        display:none;
+        display:block;
     }
     .wide-content {
         min-height: calc(25vh - 150px);
     }
-    .title {
-        font-size: small;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: x-large;
     }
-    
+    .title h2 {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 391px) {
@@ -219,16 +245,16 @@ body {
     .block .phone {
         display:block;
     }
-    .title {
-        font-size: small;
-    }
-    #contact-me h2 {
-        display: none;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: large;
     }
-    .narrow-content{
-        flex: 1 0 100%;
+    .wide-content {
+        flex: 1 0 95%;
     }
+    .narrow-content{
+        flex: 1 0 95%;
+    }
+    /* footer .title {
+        display: none;
+    } */
 }
