@@ -1,3 +1,8 @@
+:root {
+    --goldenrod: PaleGoldenRod;
+}
+
+
 * {
     font-family: 'Gambetta', serif;
     background-color: beige;
@@ -39,7 +44,7 @@ header {
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
     margin-bottom: 0.8rem;
-    color: PaleGoldenRod;
+    color: var(--goldenrod);
     outline: none;
     text-align: center;
 }
@@ -65,15 +70,13 @@ header {
     justify-content: flex-end;
     line-height: 0.2em;
     margin: 1em;
-    /* background-color: PaleGoldenRod */
 }
 
 .header-nav li a {
     color: rgb(0, 0, 0);
-    /* background-color: PaleGoldenRod; */
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border-radius: .5em;
+    border-radius: 0.5em;
 }
 
 /* banner section  */
@@ -92,12 +95,11 @@ header {
     padding-right: 1em;
     padding-left: 0.5em;
     font-family: 'Gambetta', serif;
-    color: PaleGoldenRod;
+    color: var(--goldenrod);
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
 }
-/* new section  */
-
+/*Work content section  */
 .block {
     display: flex;
     margin-bottom: 2%;
@@ -125,7 +127,7 @@ header {
     align-items: stretch;
 }
 .wide-content {
-    flex: 1 0 100%;
+    flex: 1 0 80%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -135,9 +137,10 @@ header {
     min-height: calc(50vh - 150px);
     background-color: rgb(227, 229, 110);
     background-blend-mode:soft-light;
-    border: 10px solid;
-    border-color: beige;
+    border: 8px solid;
+    border-color: var(--goldenrod);
     border-radius: 1.5em;
+    margin-left: 0.5em;
 }
 .narrow-content {
     flex: 1 0 40%;
@@ -146,12 +149,15 @@ header {
     opacity: 0.5;
     min-height: calc(25vh - 150px);
     background-size: cover;
-    background-color: rgb(227, 229, 110);
+    background-color: var(--goldenrod);
     background-blend-mode:soft-light;
-    border: 10px solid;
-    border-color: beige;
+    border: 8px solid;
+    border-color: var(--goldenrod);
     border-radius: 1.5em;
+    margin-top: 1em;
+    margin-left: 0.5em;
 }
+/* un-blur's the work content  */
 .narrow-content:hover {
     opacity: 1;
     background-blend-mode:normal;
@@ -162,7 +168,7 @@ header {
 }
 
 .card-title {
-    background-color: white;
+    background-color: beige;
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -175,6 +181,7 @@ header {
     margin-bottom: 1em;
     margin-top: 1em;
     padding-left: 1em;
+    background-color: var(--goldenrod);
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     /* align-items: flex-end; */
@@ -191,6 +198,7 @@ header {
     background: none;
 }
 
+/* contact info section at the bottom  */
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +214,10 @@ header {
     color: black;
 }
 
+/* media queries  */
+
+/* displays the longer paragraph on screen 
+size > 912px */
 @media screen and (max-width: 100000px) {
     .block .pc {
         display:inline;
@@ -218,15 +230,17 @@ header {
     }
 }
 
+/* displays the medium paragraph and adjusts 
+content size for tablet screens*/
 @media screen and (max-width: 912px) {
     .block .pc{
         display:none;
     }
     .block .tablet {
-        display:none;
+        display:block;
     }
     .block .phone {
-        display:block;
+        display:none;
     }
     .wide-content {
         min-height: calc(25vh - 150px);
@@ -239,6 +253,8 @@ header {
     }
 }
 
+/* displays the short paragraph and adjusts 
+content for phone sized screens  */
 @media screen and (max-width: 391px) {
     .block .pc {
         display:none;
@@ -258,7 +274,4 @@ header {
     .narrow-content{
         flex: 1 0 95%;
     }
-    /* footer .title {
-        display: none;
-    } */
 }
