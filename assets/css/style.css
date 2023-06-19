@@ -1,5 +1,6 @@
 :root {
     --goldenrod: PaleGoldenRod;
+    --red: rgb(185, 83, 83);
 }
 
 
@@ -20,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(185, 83, 83);
+    background-color: var(--red);
 }
 
 /* name  */
@@ -90,7 +91,7 @@ header {
 }
 
 .subtitle h1 {
-    background-color:  rgb(185, 83, 83);
+    background-color:  var(--red);
     order: 2;
     padding-right: 1em;
     padding-left: 0.5em;
@@ -161,10 +162,12 @@ header {
 .narrow-content:hover {
     opacity: 1;
     background-blend-mode:normal;
+    box-shadow: 0 0 20px var(--red);
 }
 .wide-content:hover {
     opacity: 1;
     background-blend-mode: normal;
+    box-shadow: 0 0 20px var(--red);
 }
 
 .card-title {
@@ -209,6 +212,7 @@ header {
 }
 
 .contact-info a {
+    font-size: 1.2em;
     padding-left: 0.4em;
     padding-right: 0.4em;
     color: black;
@@ -250,6 +254,9 @@ content size for tablet screens*/
     }
     .title h2 {
         font-size: 1em;
+    }
+    .contact-info a {
+        font-size: .7em;
     }
 }
 
