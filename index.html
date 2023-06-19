@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Moriarty's Professional Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"/> 
 </head>
 
 <body>
-    <nav class="header">
+    <header>
         <div class="header-logo">
             <h1>Matthew Moriarty</h1>
         </div>
         <ul class="header-nav">
-            <li class="header-nav-item">
-                <a class="header-nav-item-anchor" href="#about-me"><strong>About Me</strong></a>
+            <li>
+                <a href="#about-me"><strong>About Me</strong></a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-anchor" href="#my-work"><strong>Work</strong></a>
+            <li>
+                <a href="#my-work"><strong>Work</strong></a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-anchor" href="#contact-me"><strong>Contact Me</strong></a>
+            <li>
+                <a href="#contact-me"><strong>Contact Me</strong></a>
             </li>
-            <li class="header-nav-item">
-                <a class="header-nav-item-anchor" href="#resume"><strong>Resume</strong></a>
+            <li>
+                <a href="./resume.html"><strong>Resume</strong></a>
             </li>
         </ul>
-    </nav>
+    </header>
 
     <div class="subtitle">
         <h1>Continuous Learner</h1>
@@ -37,17 +38,19 @@
         <div id="about-me" class="title">
             <h2>About<br>Me</h2>
         </div>
-        <!-- different paragraphs will show depending on the screen size  -->
-        <p class="pc">I am an experienced Senior Integration Specialist at Paradox LLC, a renowned HR Tech SAAS company, where I have gained valuable expertise in developing innovative solutions for complex integration challenges. In addition to my professional experience, I have successfully completed a comprehensive Full-Stack coding bootcamp, which equipped me with a diverse skill set. I am proficient in a wide range of technologies and frameworks, including HTML, CSS, Git, JavaScript, jQuery, Bootstrap, Node.js, Express.js, MySQL, Sequelize, Handlebars.js, and React. I am well-versed in agile methodologies, unit testing, and have hands-on experience with deploying applications on platforms like Heroku. 
-            <br><br>
-            Furthermore, I have a solid understanding of computer science principles, including object-oriented programming (OOP), MongoDB, NoSQL, and Progressive Web Apps (PWAs). My ability to effectively utilize the MERN stack and create engaging, user-friendly interfaces allows me to deliver high-quality and scalable solutions. With my strong problem-solving skills, attention to detail, and dedication to continuous learning, I am confident that I would be a valuable addition to any team seeking a skilled full-stack developer.
-        </p>
-        <p class="tablet">
-            I am a Senior Integration Specialist at Paradox LLC, a leading HR Tech SAAS company. Alongside my professional experience, I have completed a Full-Stack coding bootcamp where I gained proficiency in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, and React. I also have experience with third-party APIs, Git, agile methodology, and deploying applications on platforms like Heroku. My solid understanding of object-oriented programming, MongoDB, and NoSQL enables me to develop scalable solutions. With my problem-solving skills and dedication to continuous learning, I am a valuable hire for a full-stack developer position.
-        </p>
-        <p class="phone">
-            I am a Senior Integration Specialist at Paradox LLC, a leading HR Tech SAAS company. With a Full-Stack coding bootcamp background, I am skilled in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, and React. I also have experience with APIs, Git, agile methodology, Heroku deployment, and database technologies. As a problem solver and dedicated learner, I bring value as a full-stack developer.
-        </p>
+        <div class="content">
+            <!-- different paragraphs will show depending on the screen size  -->
+            <p class="pc">I am an experienced Senior Integration Specialist at Paradox LLC, a renowned HR Tech SAAS company, where I have gained valuable expertise in developing innovative solutions for complex integration challenges. In addition to my professional experience, I have successfully completed a comprehensive Full-Stack coding bootcamp, which equipped me with a diverse skill set. I am proficient in a wide range of technologies and frameworks, including HTML, CSS, Git, JavaScript, jQuery, Bootstrap, Node.js, Express.js, MySQL, Sequelize, Handlebars.js, and React. I am well-versed in agile methodologies, unit testing, and have hands-on experience with deploying applications on platforms like Heroku. 
+                <br><br>
+                Furthermore, I have a solid understanding of computer science principles, including object-oriented programming (OOP), MongoDB, NoSQL, and Progressive Web Apps (PWAs). My ability to effectively utilize the MERN stack and create engaging, user-friendly interfaces allows me to deliver high-quality and scalable solutions. With my strong problem-solving skills, attention to detail, and dedication to continuous learning, I am confident that I would be a valuable addition to any team seeking a skilled full-stack developer.
+            </p>
+            <p class="tablet">
+                I am a Senior Integration Specialist at Paradox LLC, a leading HR Tech SAAS company. Alongside my professional experience, I have completed a Full-Stack coding bootcamp where I gained proficiency in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, and React. I also have experience with third-party APIs, Git, agile methodology, and deploying applications on platforms like Heroku. My solid understanding of object-oriented programming, MongoDB, and NoSQL enables me to develop scalable solutions. With my problem-solving skills and dedication to continuous learning, I am a valuable hire for a full-stack developer position.
+            </p>
+            <p class="phone">
+                I am a Senior Integration Specialist at Paradox LLC, a leading HR Tech SAAS company. With a Full-Stack coding bootcamp background, I am skilled in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, and React. I also have experience with APIs, Git, agile methodology, Heroku deployment, and database technologies. As a problem solver and dedicated learner, I bring value as a full-stack developer.
+            </p>
+        </div>
     </section>
     <main class="block">
         <div id="my-work" class="title">
@@ -60,25 +63,25 @@
                     <a>MERN Stack</a>
                 </div>
             </div>
-            <div class="narrow-content" style="background-image: url('./assets/images/led-video-wall-screen-texture-background-display_107791-2901.avif')";>
+            <div class="narrow-content" style="background-image: url('./assets/images/led-video-wall-screen-texture-background-display_107791-2901.avif');";>
                 <div class="card-title">
                     <h2>LED Wall</h2>
                     <a>Node/IoT</a>
                 </div>
             </div>
-            <div class="narrow-content" style="background-image: url('./assets/images/calculator_image.jpg')">
+            <div class="narrow-content" style="background-image: url('./assets/images/calculator_image.jpg');">
                 <div class="card-title">
                     <h2>Calculator</h2>
                     <a>React/JavaScript/CSS</a>
                 </div>
             </div>
-            <div class="narrow-content" style="background-image: url('./assets/images/puzzle-pieces-isolated-on-blue-background-flat-lay-directly-above-free-photo.jpg')">
+            <div class="narrow-content" style="background-image: url('./assets/images/puzzle-pieces-isolated-on-blue-background-flat-lay-directly-above-free-photo.jpg');">
                 <div class="card-title">
                     <h2>Pastel Puzzels</h2>
                     <a>MERN Stack</a>
                 </div>
             </div>
-            <div class="narrow-content" style="background-image: url('./assets/images/runner_image.jpg'); display: flex;">
+            <div class="narrow-content" style="background-image: url('./assets/images/runner_image.jpg');">
                 <div class="card-title">
                     <h2>Run Buddy</h2>
                     <a>HTML/CSS</a>
@@ -87,19 +90,18 @@
         </div>
     </main>
     <footer class="block">
-        <div id="contact-me" class="title">
+        <div class="title">
             <h2>Contact<br>Me</h2>
         </div>
-        <div class="contact-info">
-            <a>Phone: 360-689-2953</a>
-            <a>Email: matt11moriarty@yahoo.com</a>
-            <a href="https://github.com/Matt11Moriarty">Github</a>
-            <a href="https://www.instagram.com/matt.moriarty94/">Instagram</a>
+        <div class="content">
+            <div id ="contact-me" class="contact-info">
+                <a>360-689-2953</a>
+                <a>matt11moriarty@yahoo.com</a>
+                <a href="https://github.com/Matt11Moriarty">Github</a>
+                <a href="https://www.instagram.com/matt.moriarty94/">Instagram</a>
+            </div>
         </div>
     </footer>
-
-
-
 
 </body>
 </html>

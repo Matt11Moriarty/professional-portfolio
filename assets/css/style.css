@@ -1,19 +1,30 @@
+:root {
+    --goldenrod: PaleGoldenRod;
+    --red: rgb(185, 83, 83);
+}
+
+
 * {
     font-family: 'Gambetta', serif;
+    background-color: beige;
 }
 
 body {
     width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 /* HEADER NAME LOGO AND NAV BAR  */
-.header {
+
+/* top section with name and hrefs  */
+header {
     display: flex;
     justify-content: space-between;
-    color: rgb(11, 11, 11);
     width: 100%;
-    background-color: rgb(185, 83, 83);
+    background-color: var(--red);
 }
 
+/* name  */
 .header-logo {
     text-align: left;
     padding-left: 0.25em;
@@ -24,6 +35,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .header-logo h1 {
     background: none;
     font-size: xxx-large;
@@ -33,11 +45,16 @@ body {
     transition: 700ms ease;
     font-variation-settings: "wght" 311;
     margin-bottom: 0.8rem;
-    color: PaleGoldenRod;
+    color: var(--goldenrod);
     outline: none;
     text-align: center;
 }
-
+/* cool hover effect  */
+.header-logo h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+/* nav bar with hrefs to page segments */
 .header-nav {
     display: flex;
     flex-grow: 2;
@@ -45,169 +62,166 @@ body {
     align-self: flex-end;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: flex-end
+    align-items: flex-end;
+    background-color: transparent;
 }
 
-.header-nav-item {
+.header-nav li {
     display: inline;
     justify-content: flex-end;
     line-height: 0.2em;
     margin: 1em;
 }
 
-.header-nav-item-anchor {
+.header-nav li a {
     color: rgb(0, 0, 0);
-    background-color: PaleGoldenRod;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    border-radius: .5em;
+    border-radius: 0.5em;
 }
 
 /* banner section  */
 .subtitle {
     display: flex;
     justify-content: flex-end;
+    background-image: url(../images/gold_banner.jpg);
+    background-size: cover;
     background-color: rgb(173, 165, 62);
+    margin-bottom: 2em;
 }
 
 .subtitle h1 {
-    background-color:  rgb(185, 83, 83);
+    background-color:  var(--red);
     order: 2;
     padding-right: 1em;
     padding-left: 0.5em;
     font-family: 'Gambetta', serif;
-    color: PaleGoldenRod;
+    color: var(--goldenrod);
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
 }
-
-/* work section */
+/*Work content section  */
 .block {
     display: flex;
+    margin-bottom: 2%;
     background-color: beige;
-    flex-grow: auto;
-    padding: 1em;
 }
 
 .title {
-    width: 15vw;
+    flex: 1 0 15%;
+    border-right: 3px solid black;
     text-align: right;
-    margin: 1em;
-    border-right: 0.2em solid;
-    background: none;
-    font-size:x-large;
+    padding-right: 2%;
+    margin-right: 2%;
+    position: 1;
 }
+
 .title h2 {
-    text-align: right;
-    background: none;
-    margin-right: 0.2em;
-    font-family: 'Gambetta', serif;
-    
+    flex: 1 0 80%;
+    font-size: 1.5em;
 }
 
 .content {
     display: flex;
+    flex: 1 0 80%;
     flex-wrap: wrap;
-    width: 100%;
-    background: burlywood;
+    align-items: stretch;
 }
-
 .wide-content {
-    width: 100%;
+    flex: 1 0 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
     background-image: url('../images/surfing-a-wave-clipart.png');
-    justify-content: flex-start;
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    background-size: cover;
+    opacity: 0.5;
     min-height: calc(50vh - 150px);
-    border: 0.2em solid;
+    background-color: rgb(227, 229, 110);
+    background-blend-mode:soft-light;
+    border: 8px solid;
+    border-color: var(--goldenrod);
+    border-radius: 1.5em;
+    margin-left: 0.5em;
 }
-
 .narrow-content {
-    background-color: azure;
-    width: 50%;
-    min-height: calc(25vh - 150px);
-    display: flex;
-}
-
-
-.block p {
-    margin: 1em;
-    width: calc(100% - 16vw);
-    justify-content: flex-start;
+    flex: 1 0 40%;
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
-    background: none;
-    border: 0.25px solid; 
-    padding: 1em;
-    box-shadow: 3px 4px #9c9c7c;
+    opacity: 0.5;
+    min-height: calc(25vh - 150px);
+    background-size: cover;
+    background-color: var(--goldenrod);
+    background-blend-mode:soft-light;
+    border: 8px solid;
+    border-color: var(--goldenrod);
+    border-radius: 1.5em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+/* un-blur's the work content  */
+.narrow-content:hover {
+    opacity: 1;
+    background-blend-mode:normal;
+    box-shadow: 0 0 20px var(--red);
+}
+.wide-content:hover {
+    opacity: 1;
+    background-blend-mode: normal;
+    box-shadow: 0 0 20px var(--red);
 }
 
 .card-title {
-    justify-content: center;
-    background-color: rgb(250, 246, 191);
-    margin-bottom: 1em;
-    margin-top: 1em;
+    background-color: beige;
+    opacity: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    padding: 0.5em;
-    background-color: PaleGoldenRod;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+    height: calc(22vh - 100px);
+    background-blend-mode: normal;
+    width: 8em;
+    /* padding-bottom: 1em;
+    margin-top: 1em; */
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 1em;
+    background-color: var(--goldenrod);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* align-items: flex-end; */
 }
 .card-title h2 {
+    margin-bottom: 0.2em;
     font-size: 1em;
     background: none;
     font-family: 'Gambetta', serif;
 }
 .card-title a {
+    margin-top: 0.2em;
     font-size: 0.75em;
     background: none;
 }
-/* Contact me section*/
 
-
+/* contact info section at the bottom  */
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background: none;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    padding-top: 1em;
+    flex: 1 0 20%;
 }
+
 .contact-info a {
-    background: none;
-    text-decoration:underline;
+    font-size: 1.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
     color: black;
 }
 
-/* media screen settings  */
-/* .pc {
-    color: black;
-} */
+/* media queries  */
 
-.tablet {
-    color: black;
-    display: hidden;
-}
-
-.phone {
-    color: black;
-    display: hidden;
-}
-
-/* css messin  */
-.header-logo h1:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 1px;
-  }
-  
-
-/* Shows different Paragraphs depending on screen size  */
-
+/* displays the longer paragraph on screen 
+size > 912px */
 @media screen and (max-width: 100000px) {
     .block .pc {
         display:inline;
@@ -220,6 +234,8 @@ body {
     }
 }
 
+/* displays the medium paragraph and adjusts 
+content size for tablet screens*/
 @media screen and (max-width: 912px) {
     .block .pc{
         display:none;
@@ -233,15 +249,19 @@ body {
     .wide-content {
         min-height: calc(25vh - 150px);
     }
-    .title {
-        font-size: small;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: x-large;
     }
-    
+    .title h2 {
+        font-size: 1em;
+    }
+    .contact-info a {
+        font-size: .7em;
+    }
 }
 
+/* displays the short paragraph and adjusts 
+content for phone sized screens  */
 @media screen and (max-width: 391px) {
     .block .pc {
         display:none;
@@ -252,15 +272,13 @@ body {
     .block .phone {
         display:block;
     }
-    .title {
-        font-size: small;
-    }
-    #contact-me h2 {
-        display: none;
-    }
     .header-logo h1, .subtitle h1 {
         font-size: large;
     }
-    
+    .wide-content {
+        flex: 1 0 95%;
+    }
+    .narrow-content{
+        flex: 1 0 95%;
+    }
 }
-
