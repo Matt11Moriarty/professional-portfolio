@@ -20,3 +20,6 @@ Resources
 - box sizing
   - https://css-tricks.com/box-sizing/
   - https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-sizing_new
+
+- Converted resume to html
+  - https://cloudconvert.com/pdf-to-html
