@@ -1,18 +1,11 @@
-# professional-portfolio
-Matthew Moriarty's Professional Portfolio
-
-
-
-# <Your-Project-Title>
+# Matthew Moriarty's Professional Portfolio
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This professional portfolio serves as a home page for me (Matthew Moriarty) to share my projects and highlight my skills as a developer.
+At time of writing (06/2023), only the resume is up to date. The projects are placeholders for future work that I can replace with legitimate projects in the future!
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Creating this portfolio provided me with the oportunity to sharpen my CSS skills and practice using flex-box, and other cool styling techniques.
 
 ## Table of Contents (Optional)
 
@@ -25,7 +18,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A
 
 ## Usage
 
@@ -43,14 +36,11 @@ Media Queries:
     - Shortest legth "About Me" paragraph
     - Moves all content into a single column
 
-
-
-
 ![alt text](/assets/images/screenshot_of_homepage.png)
-
 
 ## Credits
 
+### Resources
 - Flexbox
   - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
   - https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
@@ -84,10 +74,11 @@ N/A
 ## Features
 
 - Link to resume
+- Media queries for responsive design
 
 ## How to Contribute
 
-- N/A
+N/A
 
 ## Tests
 
