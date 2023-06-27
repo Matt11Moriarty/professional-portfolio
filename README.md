@@ -7,16 +7,12 @@ Matthew Moriarty's Professional Portfolio
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?
 
 ## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -37,7 +33,7 @@ Site URL: https://matt11moriarty.github.io/professional-portfolio/
   - Resume will take you to a separate resume page
 
 Media Queries:
-- Shrink screen size to the following to see pa:
+- Shrink screen size to the following to see different paragraphs and screen organization:
   - 912px (tablet size)
     - Medium length "About Me" paragraph
     - Shortens the wide-content (Surf Report)
