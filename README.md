@@ -29,7 +29,7 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-Site URL: https://matt11moriarty.github.io/professional-portfolio/#contact-me
+Site URL: https://matt11moriarty.github.io/professional-portfolio/
 
 - Hover over "MATTHEW MORIARTY" to see css animation
 - Hover over the Work content sections to highlight
