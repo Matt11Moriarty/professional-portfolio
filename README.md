@@ -7,10 +7,9 @@ Matthew Moriarty's Professional Portfolio
 
 ## Description
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This professional portfolio was an opportunity to learn and explore my skills with CSS and HTML.
+At time of writing (06/26) the work content are placeholders, but in the future I can update this site to include my actual work and share this with recruiters to demonstrate my knowledge and work.
+
 
 ## Table of Contents (Optional)
 
@@ -20,8 +19,7 @@ Matthew Moriarty's Professional Portfolio
 - [License](#license)
 
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A
 
 ## Usage
 
@@ -82,6 +80,7 @@ N/A
 ## Features
 
 - Link to resume
+- CSS animations
 
 ## How to Contribute
 
