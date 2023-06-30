@@ -23,6 +23,12 @@ header {
     width: 100%;
     background-color: var(--red);
 }
+header img {
+    display: inline;
+    border-radius: 50%;
+    height: 5em;
+    align-self: center;
+}
 
 /* name  */
 .header-logo {
