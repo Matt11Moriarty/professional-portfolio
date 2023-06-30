@@ -42,7 +42,7 @@ Media Queries:
 
 
 
-![alt text](/assets/images/screenshot_of_homepage.png)
+![alt text](/assets/images/Screenshot 2023-06-30 09-50-08.png)
 
 
 ## Credits
