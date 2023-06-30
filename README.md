@@ -27,6 +27,7 @@ Site URL: https://matt11moriarty.github.io/professional-portfolio/
 
 - Hover over "MATTHEW MORIARTY" to see css animation
 - Hover over the Work content sections to highlight
+  - These can be clicked on to take you to an external site
 - Nav bar navigates to different parts of the page
   - Resume will take you to a separate resume page
 
@@ -42,7 +43,7 @@ Media Queries:
 
 
 
-![alt text](/assets/images/Screenshot 2023-06-30 09-50-08.png)
+![alt text](/assets/images/homepage.png)
 
 
 ## Credits
